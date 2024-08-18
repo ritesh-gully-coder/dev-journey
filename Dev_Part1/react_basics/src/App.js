@@ -1,13 +1,22 @@
 import React from 'react';
-// import App from './components/04ReactFunctionalComponent';
-// import App from './components/05ReactClassComponent';
-import App from './components/08ReactJsxWord';
-function Ritesh() {
+// import Ritesh from './components/04ReactFunctionalComponent';
+// import Ritesh from './components/05ReactClassComponent';
+// import Ritesh from './components/08ReactJsxWord';
+import Greet from './components/Greet';
+import Ritesh from './components/09Props';
+
+function App() {
   return (
     <div className="App">
-        <App/>
+        <Ritesh/>
+        <Ritesh name="Ritesh1" title="Kumar1"><p>This is children props</p></Ritesh>
+        <Ritesh name="Ritesh2" title="Kumar2"><button>Action</button></Ritesh>
+        <Ritesh name="Ritesh3"title="Kumar3"><p>testing children props</p></Ritesh>
+        <Greet name="Ritesh1" title="Kumar1"><p>This is children props</p></Greet>
+        <Greet name="Ritesh2" title="Kumar2"><button>Action</button></Greet>
+        <Greet name="Ritesh3"title="Kumar3"><p>testing children props</p></Greet>
     </div>
   );
 }
 
-export default Ritesh;
+export default App;
