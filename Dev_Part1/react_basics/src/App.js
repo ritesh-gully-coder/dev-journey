@@ -4,17 +4,19 @@ import React from 'react';
 // import Ritesh from './components/08ReactJsxWord';
 import Greet from './components/Greet';
 import Ritesh from './components/09Props';
+import Message from './components/Message';
 
 function App() {
   return (
     <div className="App">
-        <Ritesh/>
+        {/* <Ritesh/>
         <Ritesh name="Ritesh1" title="Kumar1"><p>This is children props</p></Ritesh>
         <Ritesh name="Ritesh2" title="Kumar2"><button>Action</button></Ritesh>
         <Ritesh name="Ritesh3"title="Kumar3"><p>testing children props</p></Ritesh>
         <Greet name="Ritesh1" title="Kumar1"><p>This is children props</p></Greet>
         <Greet name="Ritesh2" title="Kumar2"><button>Action</button></Greet>
-        <Greet name="Ritesh3"title="Kumar3"><p>testing children props</p></Greet>
+        <Greet name="Ritesh3"title="Kumar3"><p>testing children props</p></Greet> */}
+        <Message/>
     </div>
   );
 }
