@@ -9,28 +9,34 @@ import Message from './components/Message';
 // import Ritesh from './components/11setStateMethod';
 import Ritesh from './components/12DestructuringPropsInFuncComponent';
 import Greet from './components/13DestructuringPropsAndStateInClassComponent';
+import EventHandlingInFuncComponent from './components/14EventHandlingInFuncComponent';
+import EventHandlingInClassComponent from './components/15EventHandlingInClassComponent';
 
 
 
 function App() {
-  return (
-    <div className="App">
-        {/* It is general component call */}
-        {/* <Ritesh/> */}
+    return (
+        <div className="App">
+            <EventHandlingInClassComponent/>
+            {/* <EventHandlingInFuncComponent/> */}
+            {/* It is general component call */}
+            {/* <Ritesh/> */}
 
-        {/* It is used for functional component */}
-        <Ritesh name="Ritesh1" title="Kumar1"><p>This is children props</p></Ritesh>
+            {/* It is used for functional component */}
+            {/* <Ritesh name="Ritesh1" title="Kumar1"><p>This is children props</p></Ritesh>
         <Ritesh name="Ritesh2" title="Kumar2"><button>Action</button></Ritesh>
-        <Ritesh name="Ritesh3"title="Kumar3"><p>testing children props</p></Ritesh>
+        <Ritesh name="Ritesh3"title="Kumar3"><p>testing children props</p></Ritesh> */}
 
-        {/* It is used for class component  */}
-        <Greet name="Ritesh1" title="Kumar1"><p>This is children props</p></Greet>
+            {/* It is used for class component  */}
+            {/* <Greet name="Ritesh1" title="Kumar1"><p>This is children props</p></Greet>
         <Greet name="Ritesh2" title="Kumar2"><button>Action</button></Greet>
-        <Greet name="Ritesh3"title="Kumar3"><p>testing children props</p></Greet>
+        <Greet name="Ritesh3"title="Kumar3"><p>testing children props</p></Greet> */}
 
-        {/* <Message/> */}
-    </div>
-  );
+            {/* <Message/> */}
+
+
+        </div>
+    );
 }
 
 export default App;
