@@ -11,13 +11,15 @@ import Ritesh from './components/12DestructuringPropsInFuncComponent';
 import Greet from './components/13DestructuringPropsAndStateInClassComponent';
 import EventHandlingInFuncComponent from './components/14EventHandlingInFuncComponent';
 import EventHandlingInClassComponent from './components/15EventHandlingInClassComponent';
+import BindingEventHandler from './components/16BindingEventHandler';
 
 
 
 function App() {
     return (
         <div className="App">
-            <EventHandlingInClassComponent/>
+            <BindingEventHandler/>
+            {/* <EventHandlingInClassComponent/> */}
             {/* <EventHandlingInFuncComponent/> */}
             {/* It is general component call */}
             {/* <Ritesh/> */}
