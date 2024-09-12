@@ -16,12 +16,13 @@ import BindingEventHandlerApproach1 from './components/16BindingEventHandlerAppr
 import BindingEventHandlerApproach2 from './components/16BindingEventHandlerApproach2';
 import BindingEventHandlerApproach3 from './components/16BindingEventHandlerApproach3';
 import BindingEventHandlerApproach4 from './components/16BindingEventHandlerApproach4';
-
+import MethodAsPropsParent from './components/17MethodAsPropsParent';
 
 function App() {
     return (
         <div className="App">
-            <BindingEventHandlerApproach4 />
+            <MethodAsPropsParent/>
+            {/* <BindingEventHandlerApproach4 /> */}
             {/* <BindingEventHandlerApproach3 /> */}
             {/* <BindingEventHandlerApproach2 /> */}
             {/* <BindingEventHandlerApproach1 /> */}
