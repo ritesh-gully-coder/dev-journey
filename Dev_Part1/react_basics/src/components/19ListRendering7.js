@@ -1,7 +1,13 @@
-import React from 'react'
-import ListRendering5a from './19ListRendering5a';
+//Warning: Each child in a list should have a unique "key" prop.
+//solution below
+//add prop to each item then
 
-function ListRendering5() {
+
+
+import React from 'react'
+import ListRendering7a from './19ListRendering7a';
+
+function ListRendering7() {
 
   const persons = [
     {
@@ -25,7 +31,7 @@ function ListRendering5() {
 
   ]
   const personList = persons.map(person =>
-    <ListRendering5a person={person} />
+    <ListRendering7a key={person.id} person={person} />
   )
 
   return (
@@ -35,9 +41,4 @@ function ListRendering5() {
   )
 }
 
-export default ListRendering5;
-
-
-
-
-//Warning: Each child in a list should have a unique "key" prop.
+export default ListRendering7;

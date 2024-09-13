@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ListRendering5a({person}) {
+function ListRendering6a({person}) {
   return (
     <div>
       <h2>I am {person.name} .I am {person.age} years old. I am {person.profession}</h2>
@@ -8,4 +8,4 @@ function ListRendering5a({person}) {
   )
 }
 
-export default ListRendering5a;
+export default ListRendering6a;

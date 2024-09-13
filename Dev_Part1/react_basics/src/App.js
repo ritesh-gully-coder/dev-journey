@@ -26,6 +26,9 @@ import ListRendering2 from './components/19ListRendering2';
 import ListRendering3 from './components/19ListRendering3';
 import ListRendering4 from './components/19ListRendering4';
 import ListRendering5 from './components/19ListRendering5';
+import ListAndKeys from './components/19ListRendering6a';
+import ListRendering6 from './components/19ListRendering6';
+import ListRendering7 from './components/19ListRendering7';
 
 
 
@@ -33,11 +36,13 @@ import ListRendering5 from './components/19ListRendering5';
 function App() {
     return (
         <div className="App">
-            <ListRendering5 />
-            <ListRendering4 />
-            <ListRendering3 />
-            <ListRendering2 />
-            <ListRendering1 />
+                     <ListRendering7 />
+           {/* <ListRendering6 /> */}
+            {/* <ListRendering5 /> */}
+            {/* <ListRendering4 /> */}
+            {/* <ListRendering3 /> */}
+            {/* <ListRendering2 /> */}
+            {/* <ListRendering1 /> */}
             {/* <ConditionalRenderingApproach4 /> */}
             {/* <ConditionalRenderingApproach3/> */}
             {/* <ConditionalRenderingApproach2/> */}
