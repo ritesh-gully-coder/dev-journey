@@ -21,10 +21,24 @@ import ConditionalRenderingApproach1 from './components/18ConditionalRenderingAp
 import ConditionalRenderingApproach2 from './components/18ConditionalRenderingApproach2';
 import ConditionalRenderingApproach3 from './components/18ConditionalRenderingApproach3';
 import ConditionalRenderingApproach4 from './components/18ConditionalRenderingApproach4';
+import ListRendering1 from './components/19ListRendering1';
+import ListRendering2 from './components/19ListRendering2';
+import ListRendering3 from './components/19ListRendering3';
+import ListRendering4 from './components/19ListRendering4';
+import ListRendering5 from './components/19ListRendering5';
+
+
+
+
 function App() {
     return (
         <div className="App">
-            <ConditionalRenderingApproach4 />
+            <ListRendering5 />
+            <ListRendering4 />
+            <ListRendering3 />
+            <ListRendering2 />
+            <ListRendering1 />
+            {/* <ConditionalRenderingApproach4 /> */}
             {/* <ConditionalRenderingApproach3/> */}
             {/* <ConditionalRenderingApproach2/> */}
             {/* <ConditionalRenderingApproach1/> */}
