@@ -17,11 +17,18 @@ import BindingEventHandlerApproach2 from './components/16BindingEventHandlerAppr
 import BindingEventHandlerApproach3 from './components/16BindingEventHandlerApproach3';
 import BindingEventHandlerApproach4 from './components/16BindingEventHandlerApproach4';
 import MethodAsPropsParent from './components/17MethodAsPropsParent';
-
+import ConditionalRenderingApproach1 from './components/18ConditionalRenderingApproach1';
+import ConditionalRenderingApproach2 from './components/18ConditionalRenderingApproach2';
+import ConditionalRenderingApproach3 from './components/18ConditionalRenderingApproach3';
+import ConditionalRenderingApproach4 from './components/18ConditionalRenderingApproach4';
 function App() {
     return (
         <div className="App">
-            <MethodAsPropsParent/>
+            <ConditionalRenderingApproach4 />
+            {/* <ConditionalRenderingApproach3/> */}
+            {/* <ConditionalRenderingApproach2/> */}
+            {/* <ConditionalRenderingApproach1/> */}
+            {/* <MethodAsPropsParent/> */}
             {/* <BindingEventHandlerApproach4 /> */}
             {/* <BindingEventHandlerApproach3 /> */}
             {/* <BindingEventHandlerApproach2 /> */}
