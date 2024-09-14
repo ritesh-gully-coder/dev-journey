@@ -31,13 +31,31 @@ import ListRendering6 from './components/19ListRendering6';
 import ListRendering7 from './components/19ListRendering7';
 import ListRenderingndexAsKeyAntiPattern1 from './components/20ListRenderingndexAsKeyAntiPattern1';
 import ListRenderingndexAsKeyAntiPattern1a from './components/20ListRenderingndexAsKeyAntiPattern1a';
+import StylingAndCssBasics4 from './components/21StylingAndCssBasics4';
+import StylingAndCssBasics2 from './components/21StylingAndCssBasics2';
+import StylingAndCssBasics3 from './components/21StylingAndCssBasics3';
+import StylingAndCssBasics5 from './components/21StylingAndCssBasics5';
+import StylingAndCssBasics6 from './components/21StylingAndCssBasics6';
+import StylingAndCssBasics7 from './components/21StylingAndCssBasics7';
+import './21appStyles.css';
+import styles from './21appStyles.module.css';
 
 
 
 function App() {
     return (
         <div className="App">
-                 <ListRenderingndexAsKeyAntiPattern1a/>
+            {/* <StylingAndCssBasics7  /> */}
+            <h1 className='error'>Error</h1>
+            <h1 className={styles.success}>Success</h1>
+            <StylingAndCssBasics6 />
+            {/* <StylingAndCssBasics5/> */}
+            {/* <StylingAndCssBasics4 primary={true} /> */}
+            {/* <StylingAndCssBasics4 primary={false}/> */}
+            {/* <StylingAndCssBasics3  primary={false}/> */}
+            {/* <StylingAndCssBasics3  primary={true}/> */}
+            {/* <StylingAndCssBasics2 /> */}
+            {/* <ListRenderingndexAsKeyAntiPattern1a/> */}
             {/* <ListRenderingndexAsKeyAntiPattern1/> */}
             {/* <ListRendering7 /> */}
             {/* <ListRendering6 /> */}

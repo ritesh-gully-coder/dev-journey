@@ -1,0 +1,12 @@
+//Styling React components:->>>
+
+//Css Styling
+//Inline Styling
+//Css Modules
+//Css in JS libraries(Styled component)
+
+//We are learning for now only above 3 types 4th one will learn in future.
+
+
+
+
