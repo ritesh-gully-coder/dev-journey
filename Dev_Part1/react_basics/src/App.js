@@ -39,16 +39,25 @@ import StylingAndCssBasics6 from './components/21StylingAndCssBasics6';
 import StylingAndCssBasics7 from './components/21StylingAndCssBasics7';
 import './21appStyles.css';
 import styles from './21appStyles.module.css';
-
+import FormHandling2 from './components/22FormHandling2';
+import FormHandling3 from './components/22FormHandling3';
+import FormHandling4 from './components/22FormHandling4';
+import FormHandling5 from './components/22FormHandling5';
+import FormHandling6 from './components/22FormHandling6';
 
 
 function App() {
     return (
         <div className="App">
+             <FormHandling6/>
+             {/* <FormHandling5/> */}
+              {/* <FormHandling4/> */}
+             {/* <FormHandling3/> */}
+            {/* <FormHandling2/> */}
             {/* <StylingAndCssBasics7  /> */}
-            <h1 className='error'>Error</h1>
-            <h1 className={styles.success}>Success</h1>
-            <StylingAndCssBasics6 />
+            {/* <h1 className='error'>Error</h1> */}
+            {/* <h1 className={styles.success}>Success</h1> */}
+            {/* <StylingAndCssBasics6 /> */}
             {/* <StylingAndCssBasics5/> */}
             {/* <StylingAndCssBasics4 primary={true} /> */}
             {/* <StylingAndCssBasics4 primary={false}/> */}
