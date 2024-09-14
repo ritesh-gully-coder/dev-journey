@@ -1,0 +1,9 @@
+>>>Unmounting has only one phase named as
+
+1)componentWillUnMount()
+>>>In this method you can perform some cleanup tasks like cancelling and in any network requests,
+   removing event handlers cancelling and subscriptions 
+   and also invalidating timers from set timeout or set interval.
+>>>Do not call the setState method.
+>>component is never rerendered after it has Unmounted.
+

@@ -1,0 +1,7 @@
+>>>It has two methods
+1)static getDerivedStateFromError(error)
+2)componentDidCatch(error,info)
+
+>>>Error methods are called when there is an error 
+   either during rendering in alife cycle method or in the constructor of any child component.
+>>>We can know about these methods in detail in error boundary of react.
