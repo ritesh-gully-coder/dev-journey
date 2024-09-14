@@ -29,15 +29,18 @@ import ListRendering5 from './components/19ListRendering5';
 import ListAndKeys from './components/19ListRendering6a';
 import ListRendering6 from './components/19ListRendering6';
 import ListRendering7 from './components/19ListRendering7';
-
+import ListRenderingndexAsKeyAntiPattern1 from './components/20ListRenderingndexAsKeyAntiPattern1';
+import ListRenderingndexAsKeyAntiPattern1a from './components/20ListRenderingndexAsKeyAntiPattern1a';
 
 
 
 function App() {
     return (
         <div className="App">
-                     <ListRendering7 />
-           {/* <ListRendering6 /> */}
+                 <ListRenderingndexAsKeyAntiPattern1a/>
+            {/* <ListRenderingndexAsKeyAntiPattern1/> */}
+            {/* <ListRendering7 /> */}
+            {/* <ListRendering6 /> */}
             {/* <ListRendering5 /> */}
             {/* <ListRendering4 /> */}
             {/* <ListRendering3 /> */}
