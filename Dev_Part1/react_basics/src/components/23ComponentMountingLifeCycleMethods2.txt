@@ -1,0 +1,31 @@
+1)Constructor(props):->
+>>>It is a special function that will get called whenever a new component is created.
+>>>constuctor is used for:->Constructor is perfect for initialzing state or binding the event handlers for class components.
+>>>Do not cause side effects.Ex:HTTP Requests
+>>>Please keep in mind to call a special function as super
+>>>The component we have accessed this.props only after the initially call super has singing the props as an argument.
+>>>constructor is only as where we expected to change or update state by directly overriting by this.state fields.
+
+2)Static method:->
+>>>constructor(props)--->static getDerivedStateFromProps(props,state)
+>>>When the state of the component depends on changes in props over time.
+>>>Set the state
+>>>Do not cause side effects.Ex:HTTP Methods.
+
+3)rendewr method:->
+>>>>>>constructor(props)--->static getDerivedStateFromProps(props,state)---->render()
+>>>render method is only method is required method in a class component.
+>>>We simply read props & state and return JSX.
+>>>render function is pure function for element props and state, which should always render same ui.
+>>>Do not change state or interact with DOM or make ajax calls.
+>>>Since it is render method JSX that also conatains the other children components,write after parent render method.
+Children component lifecycle methods are also executed.
+
+>>>componentDidMount:->
+>>>constructor(props)--->static getDerivedStateFromProps(props,state)---->render()--->componentDidMount()
+>>>This method called only once in whole lifecycle of a given component,is invoked immediately after a component
+   and all its children components ave been rendered to the DOM.
+>>>this method is perfect place to cause side effects.
+   Ex:interact with the DOM or perform y ajax calls to load data by making network requests.
+
+

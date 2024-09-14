@@ -44,15 +44,21 @@ import FormHandling3 from './components/22FormHandling3';
 import FormHandling4 from './components/22FormHandling4';
 import FormHandling5 from './components/22FormHandling5';
 import FormHandling6 from './components/22FormHandling6';
+import ComponentMountingLifeCycleMethods3 from './components/23ComponentMountingLifeCycleMethods3';
+import ComponentMountingLifeCycleMethods4A from './components/23ComponentMountingLifeCycleMethods4A';
+import ComponentMountingLifeCycleMethods4B from './components/23ComponentMountingLifeCycleMethods4B';
 
 
 function App() {
     return (
         <div className="App">
-             <FormHandling6/>
-             {/* <FormHandling5/> */}
-              {/* <FormHandling4/> */}
-             {/* <FormHandling3/> */}
+            {/* <ComponentMountingLifeCycleMethods4B /> */}
+            <ComponentMountingLifeCycleMethods4A/>
+            {/* <ComponentMountingLifeCycleMethods3/> */}
+            {/* <FormHandling6/> */}
+            {/* <FormHandling5/> */}
+            {/* <FormHandling4/> */}
+            {/* <FormHandling3/> */}
             {/* <FormHandling2/> */}
             {/* <StylingAndCssBasics7  /> */}
             {/* <h1 className='error'>Error</h1> */}
