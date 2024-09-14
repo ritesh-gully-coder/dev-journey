@@ -47,13 +47,15 @@ import FormHandling6 from './components/22FormHandling6';
 import ComponentMountingLifeCycleMethods3 from './components/23ComponentMountingLifeCycleMethods3';
 import ComponentMountingLifeCycleMethods4A from './components/23ComponentMountingLifeCycleMethods4A';
 import ComponentMountingLifeCycleMethods4B from './components/23ComponentMountingLifeCycleMethods4B';
+import ComponentUpdatingLifeCycleMethods2A from './components/24ComponentUpdatingLifecycleMethods2A';
 
 
 function App() {
     return (
         <div className="App">
+            <ComponentUpdatingLifeCycleMethods2A/>
             {/* <ComponentMountingLifeCycleMethods4B /> */}
-            <ComponentMountingLifeCycleMethods4A/>
+            {/* <ComponentMountingLifeCycleMethods4A/> */}
             {/* <ComponentMountingLifeCycleMethods3/> */}
             {/* <FormHandling6/> */}
             {/* <FormHandling5/> */}

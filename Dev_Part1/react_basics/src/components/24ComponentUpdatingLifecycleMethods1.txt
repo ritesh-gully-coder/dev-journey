@@ -1,0 +1,40 @@
+1)static getDerivedStateFromProps(props,state)
+>>>This is static method wichb receives props and state as parameter and has to return 
+   either null or an object that represents the updated states of the component 
+   this method is called every time a componentis rerendered.
+>>>This method is used when the state depends on the props of the component
+>>>Do not cause any side effects and get odd state from props 
+>>>This method is one of the more rarely used methods of updating phase.
+
+2)static getDerivedStateFromProps(props,state) --->shouldComponentUpdate(netProps,nextState)
+>>>This method receives update props and updated state.
+>>>The purpose of this method is clear from its name.
+>>>It dictates if at all the component should rerender or not .
+>>>By default all class components will rerender whenever the props they receive or thier state changes.
+>>>This method can prevent default behaviour by returning false.
+>>In this you compare the props nd state values with the next props and state values
+  and return true or false to let know react wheather the component should update or not.
+  So this method is basically for performance optimization.
+>>>Do not cause any side effects .Ex:HTTP requests calling the setState method.
+
+3)static getDerivedStateFromProps(props,state) --->shouldComponentUpdate(netProps,nextState)--->render()
+>>>render method is only method is required method in a class component.
+>>>We simply read props & state and return JSX.
+>>>render function is pure function for element props and state, which should always render same ui.
+>>>Do not change state or interact with DOM or make ajax calls.
+>>>Since it is render method JSX that also conatains the other children components,write after parent render method.
+Children component lifecycle methods are also executed.
+
+4)static getDerivedStateFromProps(props,state) --->shouldComponentUpdate(netProps,nextState)--->render()--->getSnapshotBeforeUpdate(prevProps,prevState)
+>>>This method accepts prev props and prev state values as parameter
+   and is called right before the changes from the virtual DOM are to be reflected n the DOM.
+>>>It is rarely used method 
+>>>It capture some information from the DOM.
+>>>This method will either return null or return a value.Returned value will be passed as the third parameter to the next ethod.
+
+5)componentDidUpdate(prevProps,prevState,snapshot)
+>>>called fter the render is finished in the re-rendered cycles.
+>>>Cause side effects.
+
+
+

@@ -12,7 +12,7 @@
 >>>Set the state
 >>>Do not cause side effects.Ex:HTTP Methods.
 
-3)rendewr method:->
+3)render method:->
 >>>>>>constructor(props)--->static getDerivedStateFromProps(props,state)---->render()
 >>>render method is only method is required method in a class component.
 >>>We simply read props & state and return JSX.
