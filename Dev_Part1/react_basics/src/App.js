@@ -57,12 +57,14 @@ import FragmentsDemo3Table2 from './components/27FragmentsDemo3Table2';
 import FragmentsDemo3Table3 from './components/27FragmentsDemo3Table3';
 import ParentComponent from './components/28ParentComponent';
 import ParentComponent1 from './components/28ParentComponent1';
+import MemoComponentParent from './components/29MemoComponentParent';
 
 
 function App() {
     return (
         <div className="App">
-            <ParentComponent1 />
+            <MemoComponentParent />
+            {/* <ParentComponent1 /> */}
             {/* <ParentComponent/> */}
             {/* <FragmentsDemo3Table3 /> */}
             {/* <FragmentsDemo3Table2 /> */}
