@@ -48,12 +48,24 @@ import ComponentMountingLifeCycleMethods3 from './components/23ComponentMounting
 import ComponentMountingLifeCycleMethods4A from './components/23ComponentMountingLifeCycleMethods4A';
 import ComponentMountingLifeCycleMethods4B from './components/23ComponentMountingLifeCycleMethods4B';
 import ComponentUpdatingLifeCycleMethods2A from './components/24ComponentUpdatingLifecycleMethods2A';
+import FragmentsDemo from './components/27FragmentsDemo';
+import FragmentsDemo1 from './components/27FragmentsDemo1';
+import FragmentsDemo2 from './components/27FragmentsDemo2';
+import FragmentsDemo3Table from './components/27FragmentsDemo3Table';
+import FragmentsDemo3Table1 from './components/27FragmentsDemo3Table1';
+import FragmentsDemo3Table2 from './components/27FragmentsDemo3Table2';
 
 
 function App() {
     return (
         <div className="App">
-            <ComponentUpdatingLifeCycleMethods2A/>
+            <FragmentsDemo3Table2 />
+            {/* <FragmentsDemo3Table1/> */}
+            {/* <FragmentsDemo3Table/> */}
+            {/* <FragmentsDemo2 /> */}
+            {/* <FragmentsDemo1 /> */}
+            {/* <FragmentsDemo/> */}
+            {/* <ComponentUpdatingLifeCycleMethods2A/> */}
             {/* <ComponentMountingLifeCycleMethods4B /> */}
             {/* <ComponentMountingLifeCycleMethods4A/> */}
             {/* <ComponentMountingLifeCycleMethods3/> */}
