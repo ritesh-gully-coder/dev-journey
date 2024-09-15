@@ -54,12 +54,14 @@ import FragmentsDemo2 from './components/27FragmentsDemo2';
 import FragmentsDemo3Table from './components/27FragmentsDemo3Table';
 import FragmentsDemo3Table1 from './components/27FragmentsDemo3Table1';
 import FragmentsDemo3Table2 from './components/27FragmentsDemo3Table2';
+import FragmentsDemo3Table3 from './components/27FragmentsDemo3Table3js';
 
 
 function App() {
     return (
         <div className="App">
-            <FragmentsDemo3Table2 />
+             <FragmentsDemo3Table3 />
+            {/* <FragmentsDemo3Table2 /> */}
             {/* <FragmentsDemo3Table1/> */}
             {/* <FragmentsDemo3Table/> */}
             {/* <FragmentsDemo2 /> */}
