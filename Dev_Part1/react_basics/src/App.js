@@ -61,12 +61,14 @@ import MemoComponentParent from './components/29MemoComponentParent';
 import RefsDemo from './components/30RefsDemo';
 import RefsDemo1 from './components/30RefsDemo1';
 import RefsDemo2 from './components/30RefsDemo2';
+import RefsWithClassComponentParent from './components/31RefsWithClassComponentParent';
 
 
 function App() {
     return (
         <div className="App">
-            <RefsDemo2/>
+            <RefsWithClassComponentParent/>
+            {/* <RefsDemo2/> */}
             {/* <RefsDemo1 /> */}
             {/* <RefsDemo /> */}
             {/* <MemoComponentParent /> */}
