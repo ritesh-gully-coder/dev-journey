@@ -58,12 +58,18 @@ import FragmentsDemo3Table3 from './components/27FragmentsDemo3Table3';
 import ParentComponent from './components/28ParentComponent';
 import ParentComponent1 from './components/28ParentComponent1';
 import MemoComponentParent from './components/29MemoComponentParent';
+import RefsDemo from './components/30RefsDemo';
+import RefsDemo1 from './components/30RefsDemo1';
+import RefsDemo2 from './components/30RefsDemo2';
 
 
 function App() {
     return (
         <div className="App">
-            <MemoComponentParent />
+            <RefsDemo2/>
+            {/* <RefsDemo1 /> */}
+            {/* <RefsDemo /> */}
+            {/* <MemoComponentParent /> */}
             {/* <ParentComponent1 /> */}
             {/* <ParentComponent/> */}
             {/* <FragmentsDemo3Table3 /> */}
