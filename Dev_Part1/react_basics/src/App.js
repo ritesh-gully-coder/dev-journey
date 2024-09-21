@@ -65,12 +65,16 @@ import RefsWithClassComponentParent from './components/31RefsWithClassComponentP
 import ForwardingRefsParent from './components/32ForwardingRefsParent';
 import PortalDemo from './components/33PortalDemo';
 import PortalDemo1 from './components/33PortalDemo1';
+import ErrorBoundary from './components/34ErrorBoundary';
 
 
 function App() {
     return (
         <div className="App">
-            <PortalDemo1/>
+            <ErrorBoundary courseName="Computer"/>
+            <ErrorBoundary courseName ="Science"/>
+            {/* <ErrorBoundary courseName ="Coding"/>by tis entire application crshes */}
+            {/* <PortalDemo1/> */}
             {/* <PortalDemo/> */}
             {/* <ForwardingRefsParent/> */}
             {/* <RefsWithClassComponentParent/> */}
