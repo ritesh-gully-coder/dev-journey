@@ -67,14 +67,20 @@ import PortalDemo from './components/33PortalDemo';
 import PortalDemo1 from './components/33PortalDemo1';
 import ErrorBoundary from './components/34ErrorBoundary';
 import ErrorBoundary1 from './components/34ErrorBoundary1';
+import ErrorBoundary1Solution from './components/34ErrorBoundary1Solution';
 
 
 function App() {
     return (
         <div className="App">
-             <ErrorBoundary1 courseName="Computer"/>
+            <ErrorBoundary1Solution>
+                <ErrorBoundary1 courseName="Computer" />
+                <ErrorBoundary1 courseName="Science" />
+                <ErrorBoundary1 courseName="Coding" />
+            </ErrorBoundary1Solution>
+            {/* <ErrorBoundary1 courseName="Computer"/>
             <ErrorBoundary1 courseName ="Science"/>
-            <ErrorBoundary1 courseName ="Coding"/>
+            <ErrorBoundary1 courseName ="Coding"/> */}
             {/* <ErrorBoundary courseName="Computer"/>
             <ErrorBoundary courseName ="Science"/> */}
             {/* <ErrorBoundary courseName ="Coding"/>by tis entire application crshes */}
