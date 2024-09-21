@@ -68,12 +68,14 @@ import PortalDemo1 from './components/33PortalDemo1';
 import ErrorBoundary from './components/34ErrorBoundary';
 import ErrorBoundary1 from './components/34ErrorBoundary1';
 import ErrorBoundary1Solution from './components/34ErrorBoundary1Solution';
+import HOC_ClickCounter from './components/35HOC_ClickCounter';
 
 
 function App() {
     return (
         <div className="App">
-            <ErrorBoundary1Solution>
+            <HOC_ClickCounter/>
+            {/* <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Computer" />
             </ErrorBoundary1Solution>
             <ErrorBoundary1Solution>
@@ -81,7 +83,7 @@ function App() {
             </ErrorBoundary1Solution>
             <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Coding" />
-            </ErrorBoundary1Solution>
+            </ErrorBoundary1Solution> */}
             {/* <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Computer" />
                 <ErrorBoundary1 courseName="Science" />
