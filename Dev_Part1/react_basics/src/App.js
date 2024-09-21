@@ -64,12 +64,14 @@ import RefsDemo2 from './components/30RefsDemo2';
 import RefsWithClassComponentParent from './components/31RefsWithClassComponentParent';
 import ForwardingRefsParent from './components/32ForwardingRefsParent';
 import PortalDemo from './components/33PortalDemo';
+import PortalDemo1 from './components/33PortalDemo1';
 
 
 function App() {
     return (
         <div className="App">
-            <PortalDemo/>
+            <PortalDemo1/>
+            {/* <PortalDemo/> */}
             {/* <ForwardingRefsParent/> */}
             {/* <RefsWithClassComponentParent/> */}
             {/* <RefsDemo2/> */}
