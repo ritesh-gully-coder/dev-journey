@@ -66,13 +66,17 @@ import ForwardingRefsParent from './components/32ForwardingRefsParent';
 import PortalDemo from './components/33PortalDemo';
 import PortalDemo1 from './components/33PortalDemo1';
 import ErrorBoundary from './components/34ErrorBoundary';
+import ErrorBoundary1 from './components/34ErrorBoundary1';
 
 
 function App() {
     return (
         <div className="App">
-            <ErrorBoundary courseName="Computer"/>
-            <ErrorBoundary courseName ="Science"/>
+             <ErrorBoundary1 courseName="Computer"/>
+            <ErrorBoundary1 courseName ="Science"/>
+            <ErrorBoundary1 courseName ="Coding"/>
+            {/* <ErrorBoundary courseName="Computer"/>
+            <ErrorBoundary courseName ="Science"/> */}
             {/* <ErrorBoundary courseName ="Coding"/>by tis entire application crshes */}
             {/* <PortalDemo1/> */}
             {/* <PortalDemo/> */}
