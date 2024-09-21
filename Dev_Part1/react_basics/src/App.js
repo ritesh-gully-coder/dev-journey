@@ -62,12 +62,14 @@ import RefsDemo from './components/30RefsDemo';
 import RefsDemo1 from './components/30RefsDemo1';
 import RefsDemo2 from './components/30RefsDemo2';
 import RefsWithClassComponentParent from './components/31RefsWithClassComponentParent';
+import ForwardingRefsParent from './components/32ForwardingRefsParent';
 
 
 function App() {
     return (
         <div className="App">
-            <RefsWithClassComponentParent/>
+            <ForwardingRefsParent/>
+            {/* <RefsWithClassComponentParent/> */}
             {/* <RefsDemo2/> */}
             {/* <RefsDemo1 /> */}
             {/* <RefsDemo /> */}
