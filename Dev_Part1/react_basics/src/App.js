@@ -75,9 +75,18 @@ function App() {
         <div className="App">
             <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Computer" />
+            </ErrorBoundary1Solution>
+            <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Science" />
+            </ErrorBoundary1Solution>
+            <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Coding" />
             </ErrorBoundary1Solution>
+            {/* <ErrorBoundary1Solution>
+                <ErrorBoundary1 courseName="Computer" />
+                <ErrorBoundary1 courseName="Science" />
+                <ErrorBoundary1 courseName="Coding" />
+            </ErrorBoundary1Solution> */}
             {/* <ErrorBoundary1 courseName="Computer"/>
             <ErrorBoundary1 courseName ="Science"/>
             <ErrorBoundary1 courseName ="Coding"/> */}
