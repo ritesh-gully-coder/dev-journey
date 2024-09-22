@@ -70,21 +70,50 @@ import ErrorBoundary1 from './components/34ErrorBoundary1';
 import ErrorBoundary1Solution from './components/34ErrorBoundary1Solution';
 import HOC_ClickCounter from './components/35HOC_ClickCounter';
 import HOC_HoverCounter from './components/35HOC_HoverCounter';
-import HOC_WithCounter from'./components/35HOC_WithCounter';
-import HOC_WithCopunterClickCounter from'./components/35HOC_WithCounterClickCounter';
-import HOC_WithCounterHoverCounter from'./components/35HOC_WithCounterHoverCounter';
-import HOC_WithCopunterClickCounter1 from'./components/35HOC_WithCounterClickCounter1';
-import HOC_WithCounterHoverCounter1 from'./components/35HOC_WithCounterHoverCounter1';
-import HOC_WithCopunterClickCounter2 from'./components/35HOC_WithCounterClickCounter2';
-import HOC_WithCounterHoverCounter2 from'./components/35HOC_WithCounterHoverCounter2';
+import HOC_WithCounter from './components/35HOC_WithCounter';
+import HOC_WithCopunterClickCounter from './components/35HOC_WithCounterClickCounter';
+import HOC_WithCounterHoverCounter from './components/35HOC_WithCounterHoverCounter';
+import HOC_WithCopunterClickCounter1 from './components/35HOC_WithCounterClickCounter1';
+import HOC_WithCounterHoverCounter1 from './components/35HOC_WithCounterHoverCounter1';
+import HOC_WithCopunterClickCounter2 from './components/35HOC_WithCounterClickCounter2';
+import HOC_WithCounterHoverCounter2 from './components/35HOC_WithCounterHoverCounter2';
+import RenderClickCounter from './components/36RenderClickCounter';
+import RenderHoverCounter from './components/36RenderHoverCounter';
+import RenderUser from './components/36RenderUser';
+import RenderUser1 from './components/36RenderUser1';
+import RenderUser2 from './components/36RenderUser2';
+import RenderUser3 from './components/36RenderUser3';
+import RenderCounter from './components/36RenderCounter';
+import RenderCounterClick from './components/36RenderCounterClick';
+import RenderCounterHover from './components/36RenderCounterHover';
 
 
 function App() {
     return (
         <div className="App">
-             <HOC_WithCounterHoverCounter2/>
-            <HOC_WithCopunterClickCounter2/>
-             {/* <HOC_WithCounterHoverCounter1/>
+            <RenderCounter render={(count, incrementCount) => (
+                <RenderCounterHover
+                    count={count}
+                    incrementCount={incrementCount}
+                />
+            )}
+            />
+            <RenderCounter render={(count, incrementCount) => (
+                <RenderCounterClick
+                    count={count}
+                    incrementCount={incrementCount}
+                />
+            )}
+            />
+            {/* <RenderUser3 render = {(isLoggedIn)=>isLoggedIn ? 'Ritesh' : 'Guest'}/>
+              <RenderUser2 name = {(isLoggedIn)=>isLoggedIn ? 'Ritesh' : 'Guest'}/>
+             <RenderUser1 name = {()=>'Ritesh'}/>
+            <RenderUser name="Ritesh"/>
+            <RenderHoverCounter/>
+            <RenderClickCounter/> */}
+            {/* <HOC_WithCounterHoverCounter2 />
+            <HOC_WithCopunterClickCounter2 /> */}
+            {/* <HOC_WithCounterHoverCounter1/>
             <HOC_WithCopunterClickCounter1/> */}
             {/* <HOC_WithCounterHoverCounter/>
             <HOC_WithCopunterClickCounter/> */}
