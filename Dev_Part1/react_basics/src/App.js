@@ -73,13 +73,21 @@ import HOC_HoverCounter from './components/35HOC_HoverCounter';
 import HOC_WithCounter from'./components/35HOC_WithCounter';
 import HOC_WithCopunterClickCounter from'./components/35HOC_WithCounterClickCounter';
 import HOC_WithCounterHoverCounter from'./components/35HOC_WithCounterHoverCounter';
+import HOC_WithCopunterClickCounter1 from'./components/35HOC_WithCounterClickCounter1';
+import HOC_WithCounterHoverCounter1 from'./components/35HOC_WithCounterHoverCounter1';
+import HOC_WithCopunterClickCounter2 from'./components/35HOC_WithCounterClickCounter2';
+import HOC_WithCounterHoverCounter2 from'./components/35HOC_WithCounterHoverCounter2';
 
 
 function App() {
     return (
         <div className="App">
-            <HOC_WithCounterHoverCounter/>
-            <HOC_WithCopunterClickCounter/>
+             <HOC_WithCounterHoverCounter2/>
+            <HOC_WithCopunterClickCounter2/>
+             {/* <HOC_WithCounterHoverCounter1/>
+            <HOC_WithCopunterClickCounter1/> */}
+            {/* <HOC_WithCounterHoverCounter/>
+            <HOC_WithCopunterClickCounter/> */}
             {/* <HOC_HoverCounter/> 
              <HOC_ClickCounter/> */}
             {/* <ErrorBoundary1Solution>
