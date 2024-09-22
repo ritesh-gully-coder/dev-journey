@@ -86,12 +86,23 @@ import RenderUser3 from './components/36RenderUser3';
 import RenderCounter from './components/36RenderCounter';
 import RenderCounterClick from './components/36RenderCounterClick';
 import RenderCounterHover from './components/36RenderCounterHover';
+import ContextComponentC from './components/37ContextComponentC';
+// import { UserProvider } from './components/37UserContext';
+import { UserProvider } from './components/37UserContext1';
+import ContextComponentC1 from './components/37ContextComponentC1';
 
 
 function App() {
     return (
         <div className="App">
-            <RenderCounter render={(count, incrementCount) => (
+            <UserProvider value="Ritesh">
+            <ContextComponentC1/>
+            </UserProvider>
+            {/* <UserProvider value="Ritesh">
+            <ContextComponentC/>
+            </UserProvider> */}
+           
+            {/* <RenderCounter render={(count, incrementCount) => (
                 <RenderCounterHover
                     count={count}
                     incrementCount={incrementCount}
@@ -104,7 +115,7 @@ function App() {
                     incrementCount={incrementCount}
                 />
             )}
-            />
+            /> */}
             {/* <RenderUser3 render = {(isLoggedIn)=>isLoggedIn ? 'Ritesh' : 'Guest'}/>
               <RenderUser2 name = {(isLoggedIn)=>isLoggedIn ? 'Ritesh' : 'Guest'}/>
              <RenderUser1 name = {()=>'Ritesh'}/>
