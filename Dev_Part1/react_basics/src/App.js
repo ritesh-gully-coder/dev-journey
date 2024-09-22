@@ -69,12 +69,19 @@ import ErrorBoundary from './components/34ErrorBoundary';
 import ErrorBoundary1 from './components/34ErrorBoundary1';
 import ErrorBoundary1Solution from './components/34ErrorBoundary1Solution';
 import HOC_ClickCounter from './components/35HOC_ClickCounter';
+import HOC_HoverCounter from './components/35HOC_HoverCounter';
+import HOC_WithCounter from'./components/35HOC_WithCounter';
+import HOC_WithCopunterClickCounter from'./components/35HOC_WithCounterClickCounter';
+import HOC_WithCounterHoverCounter from'./components/35HOC_WithCounterHoverCounter';
 
 
 function App() {
     return (
         <div className="App">
-            <HOC_ClickCounter/>
+            <HOC_WithCounterHoverCounter/>
+            <HOC_WithCopunterClickCounter/>
+            {/* <HOC_HoverCounter/> 
+             <HOC_ClickCounter/> */}
             {/* <ErrorBoundary1Solution>
                 <ErrorBoundary1 courseName="Computer" />
             </ErrorBoundary1Solution>
