@@ -90,18 +90,22 @@ import ContextComponentC from './components/37ContextComponentC';
 // import { UserProvider } from './components/37UserContext';
 import { UserProvider } from './components/37UserContext1';
 import ContextComponentC1 from './components/37ContextComponentC1';
+import HttpGetMethodDemo from './components/38_6HttpGetMethodDemo';
+import HttpPostMethodDemo from './components/38_7HttpPostMethodDemo';
 
 
 function App() {
     return (
         <div className="App">
-            <UserProvider value="Ritesh">
+            <HttpPostMethodDemo />
+            {/* <HttpGetMethodDemo/> */}
+            {/* <UserProvider value="Ritesh">
             <ContextComponentC1/>
-            </UserProvider>
+            </UserProvider> */}
             {/* <UserProvider value="Ritesh">
             <ContextComponentC/>
             </UserProvider> */}
-           
+
             {/* <RenderCounter render={(count, incrementCount) => (
                 <RenderCounterHover
                     count={count}
