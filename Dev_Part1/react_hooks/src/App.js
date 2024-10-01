@@ -9,12 +9,20 @@ import UseEffectHookAfterRender from './components/07UseEffectHookAfterRender';
 import UseEffectConditionallyRunEffect from './components/08UseEffectConditionallyRunEffect';
 import UseEffectRunEffectOnlyOnce from './components/09UseEffectRunEffectOnlyOnce';
 import UseEffectHookWithCleanUpContainer from './components/10UseEffectHookWithCleanUpConainer';
+import UseEffectHookWithIncorrectDeps from './components/11_class_UseEffectHookWithIncorrectDeps'
+import UseEffectHookWithIncorrectDeps1 from './components/11_functional_UseEffectHookWithIncorrectDeps';
+import UseEffectHookWithIncorrectDeps2 from './components/11_functional_UseEffectHookWithIncorrectDeps1';
+import UseEffectHookWithIncorrectDeps3 from './components/11_functional_UseEffectHookWithIncorrectDeps2';
 
 
 
 function App() {
   return (
-    <UseEffectHookWithCleanUpContainer/>
+    <UseEffectHookWithIncorrectDeps3/>
+    // <UseEffectHookWithIncorrectDeps2/>
+    // <UseEffectHookWithIncorrectDeps1/>
+    // <UseEffectHookWithIncorrectDeps/>
+    // <UseEffectHookWithCleanUpContainer/>
     // <UseEffectRunEffectOnlyOnce/>
     // <UseEffectConditionallyRunEffect/>
     // <UseEffectHookAfterRender/>
