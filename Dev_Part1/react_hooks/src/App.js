@@ -8,12 +8,14 @@ import UseEffectHook from './components/05UseEffectHook';
 import UseEffectHookAfterRender from './components/07UseEffectHookAfterRender';
 import UseEffectConditionallyRunEffect from './components/08UseEffectConditionallyRunEffect';
 import UseEffectRunEffectOnlyOnce from './components/09UseEffectRunEffectOnlyOnce';
+import UseEffectHookWithCleanUpContainer from './components/10UseEffectHookWithCleanUpConainer';
 
 
 
 function App() {
   return (
-    <UseEffectRunEffectOnlyOnce/>
+    <UseEffectHookWithCleanUpContainer/>
+    // <UseEffectRunEffectOnlyOnce/>
     // <UseEffectConditionallyRunEffect/>
     // <UseEffectHookAfterRender/>
     // <UseEffectHook/>
