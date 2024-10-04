@@ -13,12 +13,18 @@ import UseEffectHookWithIncorrectDeps from './components/11_class_UseEffectHookW
 import UseEffectHookWithIncorrectDeps1 from './components/11_functional_UseEffectHookWithIncorrectDeps';
 import UseEffectHookWithIncorrectDeps2 from './components/11_functional_UseEffectHookWithIncorrectDeps1';
 import UseEffectHookWithIncorrectDeps3 from './components/11_functional_UseEffectHookWithIncorrectDeps2';
+import FetchingDataUsingUseEffect from './components/12FetchingDataUsingUseEffect';
+import FetchingDataUsingUseEffect1 from './components/12FetchingDataUsingUseEffect1';
+import FetchingDataUsingUseEffect2 from './components/12FetchingDataUsingUseEffect2';
 
 
 
 function App() {
   return (
-    <UseEffectHookWithIncorrectDeps3/>
+    <FetchingDataUsingUseEffect2/>
+    // <FetchingDataUsingUseEffect1/>
+    // <FetchingDataUsingUseEffect/>
+    // <UseEffectHookWithIncorrectDeps3/>
     // <UseEffectHookWithIncorrectDeps2/>
     // <UseEffectHookWithIncorrectDeps1/>
     // <UseEffectHookWithIncorrectDeps/>
