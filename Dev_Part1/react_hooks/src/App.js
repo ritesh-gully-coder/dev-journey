@@ -19,6 +19,15 @@ import FetchingDataUsingUseEffect2 from './components/12FetchingDataUsingUseEffe
 import UseContextHookDemoC from './components/13UseContextHookDemoC';
 import UseContextHookDemoC1 from './components/13UseContextHookDemoC1';
 import UseContextHookDemoC2 from './components/13UseContextHookDemoC2';
+import UseReducerHookCounter1 from './components/14UseReducerHookCounter1';
+import UseReducerHookCounter2 from './components/14UseReducerHookCounter2';
+import UseReducerHookCounter3 from './components/14UseReducerHookCounter3';
+import UseReducerHookCounter4 from './components/14UseReducerHookCounter4';
+import UseReducerHookCounter5 from './components/14UseReducerHookCounter5';
+import UseReducerHookWithUseContextHook from './components/14UseReducerHookWithUseContextHook';
+import UseReducerHookWithUseContextHookB from './components/14UseReducerHookWithUseContextHookB';
+import UseReducerHookWithUseContextHookC from './components/14UseReducerHookWithUseContextHookC';
+import UseReducerHookWithUseContextHookA from './components/14UseReducerHookWithUseContextHookA';
 
 export const UserContext = React.createContext();//used for UseContextHookDemoC
 export const ChannelContext = React.createContext();//used for UseContextHookDemoC1
@@ -26,11 +35,22 @@ export const ChannelContext = React.createContext();//used for UseContextHookDem
 
 function App() {
   return (
-    <UserContext.Provider value={'Ritesh'}>
-      <ChannelContext.Provider value={'Kumar'}>
-        <UseContextHookDemoC2 />
-      </ChannelContext.Provider>
-    </UserContext.Provider>
+    <div>
+      <UseReducerHookWithUseContextHookA/>
+      <UseReducerHookWithUseContextHookB/>
+      <UseReducerHookWithUseContextHookC/>
+    </div>
+    // <UseReducerHookWithUseContextHook/>
+    // <UseReducerHookCounter5/>
+    // <UseReducerHookCounter4/>
+    // <UseReducerHookCounter3/>
+    // <UseReducerHookCounter2/>
+    // <UseReducerHookCounter1/>
+    // <UserContext.Provider value={'Ritesh'}>
+    //   <ChannelContext.Provider value={'Kumar'}>
+    //     <UseContextHookDemoC2 />
+    //   </ChannelContext.Provider>
+    // </UserContext.Provider>
     // <UserContext.Provider value={'Ritesh'}>
     //   <ChannelContext.Provider value={'Kumar'}>
     //     <UseContextHookDemoC1 />
