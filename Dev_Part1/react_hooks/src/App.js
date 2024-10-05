@@ -30,6 +30,9 @@ import UseReducerHookWithUseContextHookC from './components/14UseReducerHookWith
 import UseReducerHookWithUseContextHookA from './components/14UseReducerHookWithUseContextHookA';
 import UseReducerUsingFetchData from './components/14UseReducerUsingFetchData';
 import UseReducerUsingFetchData1 from './components/14UseReducerUsingFetchData1';
+import UseCallbackHook from './components/15UseCallbackHook';
+import UseCallbackHookParentComponent from './components/15UseCallbackHookParentComponent';
+
 
 export const UserContext = React.createContext();//used for UseContextHookDemoC
 export const ChannelContext = React.createContext();//used for UseContextHookDemoC1
@@ -54,7 +57,9 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <UseReducerUsingFetchData1/>
+    <UseCallbackHookParentComponent/>
+    // <UseCallbackHook/>
+    // <UseReducerUsingFetchData1/>
     // <UseReducerUsingFetchData/>
     // <CountContext.Provider
     //   value={{ countState: count, countDispatch: dispatch }}
