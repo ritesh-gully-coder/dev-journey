@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import HooksIntro from './components/00HooksIntro';
 import UseStateHook from './components/01UseStateHook';
 import UseStateWithPreviousState from './components/02UseStateWithPreviousState';
@@ -33,13 +33,37 @@ export const UserContext = React.createContext();//used for UseContextHookDemoC
 export const ChannelContext = React.createContext();//used for UseContextHookDemoC1
 
 
+export const CountContext = React.createContext();
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1
+    case 'decrement':
+      return state - 1
+    case 'reset':
+      return initialState
+    default:
+      return state
+  }
+
+}
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
+
   return (
-    <div>
-      <UseReducerHookWithUseContextHookA/>
-      <UseReducerHookWithUseContextHookB/>
-      <UseReducerHookWithUseContextHookC/>
-    </div>
+    <CountContext.Provider
+      value={{ countState: count, countDispatch: dispatch }}
+    >
+      <div>
+        Count - {count}
+        <UseReducerHookWithUseContextHookA />
+        <UseReducerHookWithUseContextHookB />
+        <UseReducerHookWithUseContextHookC />
+      </div>
+
+    </CountContext.Provider>
+
     // <UseReducerHookWithUseContextHook/>
     // <UseReducerHookCounter5/>
     // <UseReducerHookCounter4/>
