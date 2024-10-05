@@ -28,6 +28,8 @@ import UseReducerHookWithUseContextHook from './components/14UseReducerHookWithU
 import UseReducerHookWithUseContextHookB from './components/14UseReducerHookWithUseContextHookB';
 import UseReducerHookWithUseContextHookC from './components/14UseReducerHookWithUseContextHookC';
 import UseReducerHookWithUseContextHookA from './components/14UseReducerHookWithUseContextHookA';
+import UseReducerUsingFetchData from './components/14UseReducerUsingFetchData';
+import UseReducerUsingFetchData1 from './components/14UseReducerUsingFetchData1';
 
 export const UserContext = React.createContext();//used for UseContextHookDemoC
 export const ChannelContext = React.createContext();//used for UseContextHookDemoC1
@@ -52,17 +54,19 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <CountContext.Provider
-      value={{ countState: count, countDispatch: dispatch }}
-    >
-      <div>
-        Count - {count}
-        <UseReducerHookWithUseContextHookA />
-        <UseReducerHookWithUseContextHookB />
-        <UseReducerHookWithUseContextHookC />
-      </div>
+    <UseReducerUsingFetchData1/>
+    // <UseReducerUsingFetchData/>
+    // <CountContext.Provider
+    //   value={{ countState: count, countDispatch: dispatch }}
+    // >
+    //   <div>
+    //     Count - {count}
+    //     <UseReducerHookWithUseContextHookA />
+    //     <UseReducerHookWithUseContextHookB />
+    //     <UseReducerHookWithUseContextHookC />
+    //   </div>
 
-    </CountContext.Provider>
+    // </CountContext.Provider>
 
     // <UseReducerHookWithUseContextHook/>
     // <UseReducerHookCounter5/>
