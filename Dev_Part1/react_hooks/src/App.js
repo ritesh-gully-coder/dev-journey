@@ -16,12 +16,31 @@ import UseEffectHookWithIncorrectDeps3 from './components/11_functional_UseEffec
 import FetchingDataUsingUseEffect from './components/12FetchingDataUsingUseEffect';
 import FetchingDataUsingUseEffect1 from './components/12FetchingDataUsingUseEffect1';
 import FetchingDataUsingUseEffect2 from './components/12FetchingDataUsingUseEffect2';
+import UseContextHookDemoC from './components/13UseContextHookDemoC';
+import UseContextHookDemoC1 from './components/13UseContextHookDemoC1';
+import UseContextHookDemoC2 from './components/13UseContextHookDemoC2';
 
+export const UserContext = React.createContext();//used for UseContextHookDemoC
+export const ChannelContext = React.createContext();//used for UseContextHookDemoC1
 
 
 function App() {
   return (
-    <FetchingDataUsingUseEffect2/>
+    <UserContext.Provider value={'Ritesh'}>
+      <ChannelContext.Provider value={'Kumar'}>
+        <UseContextHookDemoC2 />
+      </ChannelContext.Provider>
+    </UserContext.Provider>
+    // <UserContext.Provider value={'Ritesh'}>
+    //   <ChannelContext.Provider value={'Kumar'}>
+    //     <UseContextHookDemoC1 />
+    //   </ChannelContext.Provider>
+    // </UserContext.Provider>
+    // <UserContext.Provider value={'Ritesh'}>
+    //   <UseContextHookDemoC />
+    // </UserContext.Provider>
+
+    // <FetchingDataUsingUseEffect2/>
     // <FetchingDataUsingUseEffect1/>
     // <FetchingDataUsingUseEffect/>
     // <UseEffectHookWithIncorrectDeps3/>
