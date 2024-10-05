@@ -44,6 +44,13 @@ import UseRefHook3 from './components/17UseRefHook3';
 import UseRefHook4 from './components/17UseRefHook4';
 import UseRefHook5Timer from './components/17UseRefHook5Timer';
 import UseRefHook5Classtimer from './components/17UseRefHook5Classtimer';
+import UseDocumentTitleHookOne from './components/19UseDocumentTitleHookOne';
+import UseDocumentTitleHookTwo from './components/19UseDocumentTitleHookTwo';
+import UseCounterHookCounter from './components/20UseCounterHookCounter';
+import UseCounterHookCounterTwo from './components/20UseCounterHookCounterTwo';
+import UseCounterHookCounterOne from './components/20UseCounterHookCounterOne';
+import UseInputHookForm from './components/21UseInputHookForm';
+import UseInputHookFormOne from './components/21UseInputHookFormOne';
 
 
 export const UserContext = React.createContext();//used for UseContextHookDemoC
@@ -69,7 +76,14 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
-     <UseRefHook5Timer/>
+    <UseInputHookFormOne/>
+    // <UseInputHookForm/>
+    // <UseCounterHookCounterTwo/>
+    // <UseCounterHookCounterOne/>
+    // <UseCounterHookCounter/>
+    // <UseDocumentTitleHookTwo/>
+    // <UseDocumentTitleHookOne/>
+    //  <UseRefHook5Timer/>
     // <UseRefHook5Classtimer/>
     // <UseRefHook4/>
     // <UseRefHook3/>
