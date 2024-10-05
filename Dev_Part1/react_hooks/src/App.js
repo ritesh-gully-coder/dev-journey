@@ -32,6 +32,11 @@ import UseReducerUsingFetchData from './components/14UseReducerUsingFetchData';
 import UseReducerUsingFetchData1 from './components/14UseReducerUsingFetchData1';
 import UseCallbackHook from './components/15UseCallbackHook';
 import UseCallbackHookParentComponent from './components/15UseCallbackHookParentComponent';
+import UseMemoHook from './components/16UseMemoHook';
+import UseMemoHookCounter from './components/16UseMemoHookCounter';
+import UseMemoHookCounter1 from './components/16UseMemoHookCounter1';
+import UseMemoHookCounter2 from './components/16UseMemoHookCounter2';
+import UseMemoHookCounter3 from './components/16UseMemoHookCounter3';
 
 
 export const UserContext = React.createContext();//used for UseContextHookDemoC
@@ -57,7 +62,12 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <UseCallbackHookParentComponent/>
+    <UseMemoHookCounter3/>
+    // <UseMemoHookCounter2/>
+    // <UseMemoHookCounter1/>
+    // <UseMemoHookCounter/>
+    // <UseMemoHook/>
+    // <UseCallbackHookParentComponent/>
     // <UseCallbackHook/>
     // <UseReducerUsingFetchData1/>
     // <UseReducerUsingFetchData/>
